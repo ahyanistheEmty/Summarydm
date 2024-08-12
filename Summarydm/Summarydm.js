@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
         summarizeButton.classList.add('summarizing');
 
         try {
-            const response = await fetch('https://sgf925pg-3001.inc1.devtunnels.ms/summarise', {
+            const response = await fetch('https://sgf925pg-3001.inc1.devtunnels.ms/summarize', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
         } catch (error) {
-            console.error('Fetch_error:', error);
+            console.error('Fetch error:', error);
             if (error.message === 'PayloadTooLargeError') {
                 alert('The text is too large, try making the text smaller.');
             } else {
@@ -123,8 +123,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         summarizeButton.disabled = false;
-        summarizeButton.textContent = 'Summarize';
-        summarizeButton.classList.remove('summarizing');
+        summarizeButton.textContent = 'Summary';
+        summarizeButton.classList.remove('Summarizing');
     });
 
     closeButton.addEventListener('click', () => {
@@ -161,11 +161,12 @@ document.addEventListener("DOMContentLoaded", () => {
         return formattedText;
     }
 });
-        // JavaScript for Menu Button
-        const menuBtn = document.getElementById('menu-btn');
-        const menuList = document.getElementById('menu-list');
 
-        menuBtn.addEventListener('click', () => {
-            const isOpen = menuList.style.left === '0px';
-            menuList.style.left = isOpen ? '-300px' : '0px';
-        });
+// JavaScript for Menu Button
+const menuBtn = document.getElementById('menu-btn');
+const menuList = document.getElementById('menu-list');
+
+menuBtn.addEventListener('click', () => {
+    const isOpen = menuList.style.left === '0px';
+    menuList.style.left = isOpen ? '-300px' : '0px';
+});

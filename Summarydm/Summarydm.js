@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
         } catch (error) {
-            console.error('Fetch error:', error);
+            console.error('Fetch_error:', error);
             if (error.message === 'PayloadTooLargeError') {
                 alert('The text is too large, try making the text smaller.');
             } else {

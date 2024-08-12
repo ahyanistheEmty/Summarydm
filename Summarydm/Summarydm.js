@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
         summarizeButton.classList.add('summarizing');
 
         try {
-            const response = await fetch('https://11pwcqff-3001.inc1.devtunnels.ms/summarize', {
+            const response = await fetch('https://sgf925pg-3001.inc1.devtunnels.ms/summarise', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

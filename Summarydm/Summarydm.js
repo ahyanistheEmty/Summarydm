@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         summarizeButton.disabled = false;
-        summarizeButton.textContent = 'Summary';
+        summarizeButton.textContent = 'Summarize';
         summarizeButton.classList.remove('Summarizing');
     });
 
